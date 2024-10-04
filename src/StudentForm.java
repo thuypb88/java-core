@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class StudentForm {
 
 
@@ -30,10 +33,13 @@ public class StudentForm {
             try{
                 System.out.print("Nhập email: ");
                 email = sc.nextLine();
-                if (email.contains("@")) {
+                String regex = "^(.+)@(.+)$";
+                Pattern pattern = Pattern.compile(regex);
+                Matcher matcher = pattern.matcher(email);
+                if (matcher.matches()) {
                     break;
                 } else {
-                    System.out.println("Email phải chứa ký tự '@'.");
+                    System.out.println("Email chưa hợp lệ. Email phải chứa ký tự '@' và '.'. Phải có ít nhất một ký tự trước và sau '@'");
                 }
             } catch (NumberFormatException e){
                 System.out.println("Vui lòng email có chứa @ hợp lệ.");
