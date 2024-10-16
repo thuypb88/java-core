@@ -20,6 +20,7 @@ public class DoctorService {
         return doctor;
     }
     public void displayInfo(Doctor doctor){
+        System.out.println("======================");
         System.out.println("Doctors Information:");
         System.out.println("Doctor's name: " + doctor.getName());
         System.out.println("Doctor's age: " + doctor.getAge());

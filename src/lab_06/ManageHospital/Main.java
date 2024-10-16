@@ -18,7 +18,7 @@ public class Main {
             System.out.println("2. Add a Patient");
             System.out.println("3. Exit");
             System.out.print("Choose an option: ");
-            int choice = scanner.nextInt();
+            int choice = Integer.parseInt(scanner.nextLine()) ;
 
             switch (choice){
                 case 1:
