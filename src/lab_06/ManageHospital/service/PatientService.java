@@ -29,6 +29,6 @@ public class PatientService {
         System.out.println("Name: " + patient.getName());
         System.out.println("Age: " + patient.getAge());
         System.out.println("Medical record Id: " + patient.getMedRecordId());
-        System.out.println("Admission Date: " + LocalDate.parse(patient.getAdmissionDate(), formatter) );
+        System.out.println("Admission Date: " + LocalDate.parse(patient.getAdmissionDate(), formatter));
     }
 }
