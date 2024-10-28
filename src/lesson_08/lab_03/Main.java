@@ -1,10 +1,6 @@
 package lesson_08.lab_03;
 
 
-import lesson_06.ManageHospital.entities.Doctor;
-import lesson_06.ManageHospital.entities.Patient;
-import lesson_06.ManageHospital.service.DoctorService;
-import lesson_06.ManageHospital.service.PatientService;
 import lesson_08.lab_03.entities.Worker;
 import lesson_08.lab_03.service.WorkerService;
 
